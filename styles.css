@@ -1,0 +1,9 @@
+.gradient {
+  background-image: linear-gradient(45deg, #ff3b5d, #b43fb4);
+  color: transparent;
+  background-clip: text;
+}
+
+main img {
+  transform: rotate(6deg);
+}

@@ -1,1 +1,150 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bird! 🐦</title>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind overrides -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "selector",
+        theme: {
+          extend: {
+            colors: {
+              darkGray: "#243c5a",
+              lightGray: "#ffffff",
+            },
+            fontFamily: {
+              sans: ['"Raleway"', "Arial", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-white dark:bg-cyan-900 text-gray-900 dark:text-white">
+    <header class="p-4">
+      <nav class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold">🐦</a>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:underline">Media</a></li>
+          <li><a href="#" class="hover:underline">Photography</a></li>
+          <li>
+            <div>
+              <label
+                for="dark-mode-toggle"
+                class="relative inline-block h-8 w-14 cursor-pointer rounded-full bg-amber-400 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-green-500"
+              >
+                <input
+                  type="checkbox"
+                  id="dark-mode-toggle"
+                  class="peer sr-only [&:checked_+_span_svg[data-checked-icon]]:block [&:checked_+_span_svg[data-unchecked-icon]]:hidden"
+                />
+
+                <span
+                  class="absolute inset-y-0 start-0 z-10 m-1 inline-flex size-6 items-center justify-center rounded-full bg-white text-gray-400 transition-all peer-checked:start-6 peer-checked:text-green-600"
+                >
+                  <img
+                    src="lightmode.svg"
+                    alt="Light Mode"
+                    class="size-4 hidden peer-checked:block"
+                  />
+
+                  <img
+                    src="darkmode.svg"
+                    alt="Dark Mode"
+                    class="size-4 hidden peer-checked:block"
+                  />
+                </span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="py-8 px-4">
+      <section
+        class="py-10 md:flex mx-auto justify-center text-center md:text-left md:pl-10"
+      >
+        <h1 class="text-3xl md:text-5xl max-w-xl mx-auto md:mx-0 md:max-w-lg">
+          I'm Annabel and I'm a
+          <span class="line-through old-job">frontend developer</span>
+          <span class="font-extrabold gradient">product designer</span>,
+          currently at
+          <a href="https://gitlab.com/annabeldunstone">GitLab</a>
+        </h1>
+        <div
+          class="relative top-4 md:-left-20 md:top-14 h-48 w-48 mx-auto md:mx-0"
+        >
+          <img src="notion-avatar.png" />
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-gray-800 text-white py-4 px-4 absolute bottom-0 left-0 right-0"
+    >
+      <ul class="md:flex gap-3">
+        <li>
+          <a class="hover:underline" href="mailto:annabel.m.gray@gmail.com"
+            >annabel.m.gray@gmail.com</a
+          >
+          <span class="hidden md:inline ml-2">·</span>
+        </li>
+        <li>
+          <a
+            class="hover:underline"
+            href="https://linkedin.com/in/annabelgray"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <span class="hidden md:inline ml-2">·</span>
+        </li>
+        <li>
+          <a
+            class="hover:underline"
+            href="https://gitlab.com/annabeldunstone"
+            target="_blank"
+            >GitLab</a
+          >
+          <span class="hidden md:inline ml-2">·</span>
+        </li>
+        <li>
+          <a
+            class="hover:underline"
+            href="https://github.com/annabel"
+            target="_blank"
+            >GitHub</a
+          >
+          <span class="hidden md:inline ml-2">·</span>
+        </li>
+        <li>
+          <a
+            class="hover:underline"
+            href="https://www.goodreads.com/annabelgray"
+            target="_blank"
+            >Goodreads</a
+          >
+        </li>
+      </ul>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
