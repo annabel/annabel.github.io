@@ -24,3 +24,7 @@ toggleButton.addEventListener("click", () => {
     localStorage.setItem("dark-mode", "false");
   }
 });
+
+function copyToClipboard() {
+  const email = document.getElementById("email").textContent;
+}
