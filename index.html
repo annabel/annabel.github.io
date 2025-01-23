@@ -35,11 +35,12 @@
   </head>
 
   <body class="bg-white dark:bg-neutral-800 text-gray-800 dark:text-white">
+    <!-- Top nav -->
     <header class="p-4">
       <nav class="max-w-7xl mx-auto flex justify-between items-center">
         <a href="/" class="text-2xl font-bold">🐦</a>
         <ul class="flex space-x-6">
-          <li><a href="#" class="hover:underline">Media</a></li>
+          <li><a href="#" class="hover:underline disabled">Media</a></li>
           <li><a href="#" class="hover:underline">Photography</a></li>
           <li>
             <label
@@ -67,10 +68,13 @@
     </header>
 
     <main class="py-8 md:px-4">
+      <!-- Intro -->
       <section
         class="pt-32 pb-52 md:flex mx-auto justify-center text-center md:text-left md:pl-10"
       >
-        <h1 class="text-3xl md:text-5xl max-w-xl mx-auto md:mx-0 md:max-w-lg">
+        <h1
+          class="text-3xl md:text-5xl max-w-xl mx-auto md:mx-0 md:max-w-lg px-4 md:px-0"
+        >
           I'm Annabel and I'm a
           <span class="line-through old-job">frontend developer</span>
           <span
@@ -86,6 +90,7 @@
         </div>
       </section>
 
+      <!-- Case studies -->
       <section class="md:px-10 py-20">
         <div
           class="px-10 py-8 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#9ca3af_1px,transparent_1px)] [background-size:16px_16px] dark:bg-neutral-800"
@@ -142,6 +147,7 @@
         </div>
       </section>
 
+      <!-- About -->
       <section class="md:px-10">
         <div class="px-10 lg:flex">
           <h2 class="text-4xl mb-4 lg:mr-20 whitespace-nowrap">About me</h2>
