@@ -42,25 +42,25 @@
           <li><a href="#" class="hover:underline">Media</a></li>
           <li><a href="#" class="hover:underline">Photography</a></li>
           <li>
-            <div>
-              <label
-                for="dark-mode-toggle"
-                class="relative inline-block h-8 w-14 cursor-pointer rounded-full bg-orange-400 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-neutral-600"
-              >
-                <input
-                  type="checkbox"
-                  id="dark-mode-toggle"
-                  class="peer sr-only [&:checked_+_span_svg[data-checked-icon]]:block [&:checked_+_span_svg[data-unchecked-icon]]:hidden"
-                />
+            <label
+              for="dark-mode-toggle"
+              class="relative inline-block h-8 w-14 cursor-pointer rounded-full bg-orange-400 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-neutral-600"
+              aria-label="Toggle dark mode"
+              title="Toggle dark mode"
+            >
+              <input
+                type="checkbox"
+                id="dark-mode-toggle"
+                class="peer sr-only [&:checked_+_span_div[data-checked-icon]]:block [&:checked_+_span_div[data-unchecked-icon]]:hidden"
+              />
 
-                <span
-                  class="absolute inset-y-0 start-0 z-10 m-1 inline-flex size-6 items-center justify-center rounded-full bg-white transition-all peer-checked:start-6"
-                >
-                  <div data-unchecked-icon class="">☀️</div>
-                  <div data-checked-icon class="hidden">🌙</div>
-                </span>
-              </label>
-            </div>
+              <span
+                class="absolute inset-y-0 start-0 z-10 m-1 inline-flex size-6 items-center justify-center rounded-full bg-white transition-all peer-checked:start-6"
+              >
+                <div data-unchecked-icon class="">☀️</div>
+                <div data-checked-icon class="hidden">🌒</div>
+              </span>
+            </label>
           </li>
         </ul>
       </nav>
@@ -74,7 +74,7 @@
           I'm Annabel and I'm a
           <span class="line-through old-job">frontend developer</span>
           <span
-            class="font-extrabold bg-gradient-to-r from-red-400 via-orange-500 to-pink-600 bg-clip-text text-transparent"
+            class="font-extrabold bg-gradient-to-r from-red-400 via-orange-500 to-pink-600 dark:from-emerald-700 dark:via-teal-600 dark:to-slate-400 bg-clip-text text-transparent"
             >product designer</span
           >, currently at
           <a href="https://gitlab.com/annabeldunstone">GitLab</a>
@@ -88,16 +88,16 @@
 
       <section class="md:px-10 py-20">
         <div
-          class="p-10 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#9ca3af_1px,transparent_1px)] [background-size:16px_16px] dark:bg-neutral-800"
+          class="px-10 py-8 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#9ca3af_1px,transparent_1px)] [background-size:16px_16px] dark:bg-neutral-800"
         >
           <h2 class="text-4xl mb-4">Recent work</h2>
           <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-white text-sm font-semibold leading-6 rounded-lg"
           >
             <div
-              class="p-4 text-xl rounded-lg min-h-48 case-study bg-gradient-to-r from-red-400 via-orange-500 to-pink-400"
+              class="p-4 text-xl rounded-lg min-h-48 case-study bg-gradient-to-r from-red-400 via-orange-500 to-pink-400 dark:from-emerald-800 dark:via-teal-800 dark:to-slate-600"
             >
-              <h3 class="text-2xl mb-2">UX Papercuts</h3>
+              <h3 class="text-2xl mb-4">UX Papercuts</h3>
               <img class="w-108 mb-5 rounded" src="papercuts.png" />
               <div class="flex gap-2 flex-wrap">
                 <span
@@ -123,9 +123,9 @@
               </div>
             </div>
             <div
-              class="p-4 text-xl rounded-lg min-h-48 case-study bg-gradient-to-r from-pink-400 via-orange-500 to-red-400"
+              class="p-4 text-xl rounded-lg min-h-48 case-study bg-gradient-to-r from-pink-400 via-orange-500 to-red-400 dark:from-slate-600 dark:via-teal-800 dark:to-emerald-800"
             >
-              <h3 class="text-2xl mb-2">GitLab merge requests</h3>
+              <h3 class="text-2xl mb-4">Merge requests</h3>
               <img class="w-108 mb-5 rounded" src="merge-requests.png" />
               <div class="flex gap-2 flex-wrap">
                 <span
@@ -147,7 +147,9 @@
           <h2 class="text-4xl mb-4 lg:mr-20 whitespace-nowrap">About me</h2>
           <div class="flex gap-8 flex-col">
             <div class="mt-2">
-              <h3 class="text-2xl mb-2 text-pink-600">Experience</h3>
+              <h3 class="text-2xl mb-2 text-pink-600 dark:text-emerald-500">
+                Experience
+              </h3>
               <p class="text-2xl max-w-prose">
                 I'm a staff product designer with over 10 years of experience in
                 the tech industry. With a background as a frontend developer, I
@@ -160,11 +162,13 @@
               </p>
             </div>
             <div class="mt-2">
-              <h3 class="text-2xl mb-2 text-pink-600">Outside of work</h3>
+              <h3 class="text-2xl mb-2 text-pink-600 dark:text-emerald-500">
+                Outside of work
+              </h3>
               <div class="text-2xl max-w-prose">
                 When I’m not working, you can usually find me baking, drawing,
-                playing with my kids, or reading a good book. I'm currently
-                reading:
+                playing with my kids, or reading a good book.
+                <div>I'm currently reading:</div>
                 <ul class="text-xl">
                   <li class="list-disc ml-7 my-3">
                     <a
@@ -203,61 +207,66 @@
       </section>
     </main>
 
-    <footer class="md:px-10 my-12">
-      <div class="px-10">
-        <h2 class="text-4xl mb-4 lg:mr-20">Contact</h2>
-
-        <div>
-          <div class="hidden md:inline md:mr-3 font-semibold">
-            Click to copy →
+    <footer class="md:px-14 mt-14">
+      <div
+        class="px-10 py-8 mb-6 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#9ca3af_1px,transparent_1px)] [background-size:16px_16px] dark:bg-neutral-800"
+      >
+        <h2 class="text-4xl mb-4">Contact</h2>
+        <div
+          class="text-lg px-4 py-2 rounded-lg case-study bg-gradient-to-r from-pink-400 via-orange-500 to-red-400 dark:from-emerald-800 dark:via-teal-800 dark:to-slate-600 text-white"
+        >
+          <div>
+            <div class="hidden md:inline md:mr-3 font-semibold">
+              Click to copy →
+            </div>
+            <a
+              class="hover:underline cursor-pointer"
+              id="email"
+              onclick="copyToClipboard()"
+              >annabel.m.gray@gmail.com</a
+            >
           </div>
-          <a
-            class="hover:underline cursor-pointer"
-            id="email"
-            onclick="copyToClipboard()"
-            >annabel.m.gray@gmail.com</a
-          >
+          <div class="hidden md:inline md:mr-3 font-semibold">
+            These links open in new tabs →
+          </div>
+          <ul class="md:inline-flex gap-3">
+            <li>
+              <a
+                class="hover:underline"
+                href="https://linkedin.com/in/annabelgray"
+                target="_blank"
+                >LinkedIn</a
+              >
+              <span class="hidden md:inline ml-2">·</span>
+            </li>
+            <li>
+              <a
+                class="hover:underline"
+                href="https://gitlab.com/annabeldunstone"
+                target="_blank"
+                >GitLab</a
+              >
+              <span class="hidden md:inline ml-2">·</span>
+            </li>
+            <li>
+              <a
+                class="hover:underline"
+                href="https://github.com/annabel"
+                target="_blank"
+                >GitHub</a
+              >
+              <span class="hidden md:inline ml-2">·</span>
+            </li>
+            <li>
+              <a
+                class="hover:underline"
+                href="https://www.goodreads.com/annabelgray"
+                target="_blank"
+                >Goodreads</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="hidden md:inline md:mr-3 font-semibold">
-          These links open in new tabs →
-        </div>
-        <ul class="md:inline-flex gap-3">
-          <li>
-            <a
-              class="hover:underline"
-              href="https://linkedin.com/in/annabelgray"
-              target="_blank"
-              >LinkedIn</a
-            >
-            <span class="hidden md:inline ml-2">·</span>
-          </li>
-          <li>
-            <a
-              class="hover:underline"
-              href="https://gitlab.com/annabeldunstone"
-              target="_blank"
-              >GitLab</a
-            >
-            <span class="hidden md:inline ml-2">·</span>
-          </li>
-          <li>
-            <a
-              class="hover:underline"
-              href="https://github.com/annabel"
-              target="_blank"
-              >GitHub</a
-            >
-            <span class="hidden md:inline ml-2">·</span>
-          </li>
-          <li>
-            <a
-              class="hover:underline"
-              href="https://www.goodreads.com/annabelgray"
-              target="_blank"
-              >Goodreads</a
-            >
-          </li>
-        </ul>
       </div>
     </footer>
 
