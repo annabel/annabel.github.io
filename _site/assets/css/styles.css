@@ -1,6 +1,6 @@
 body {
   opacity: 0;
-  transition: opacity 250ms ease-in;
+  transition: opacity 350ms ease-in;
 }
 
 body.loaded {
