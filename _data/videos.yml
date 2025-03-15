@@ -1,0 +1,31 @@
+- category: "Development"
+  description: "Tutorials on coding and development workflows."
+  videos:
+    - url: "https://www.youtube.com/embed/SSo97VwVn4Y?si=QVZEm99yqOD13_-0"
+      title: "YouTube video player"
+    - url: "https://www.youtube.com/embed/_g3uyZTAUQ8?si=oFypU0EklG4nmxkr"
+      title: "YouTube video player"
+
+- category: "UX Research"
+  description: "Insights into user experience research methods."
+  videos:
+    - url: "https://www.youtube.com/embed/74bjqo4Wk8c?si=dfzfKdU-4UF3K0eB"
+      title: "YouTube video player"
+    - url: "https://www.youtube.com/embed/Yg4QxkSeCKg?si=-DxLuYCSkX-hIlJo"
+      title: "YouTube video player"
+
+- category: "Design"
+  description: "Explorations in design principles and practices."
+  videos:
+    - url: "https://www.youtube.com/embed/dj9DzMZIv6I?si=Dc9fVte6meAgxzBr"
+      title: "YouTube video player"
+    - url: "https://www.youtube.com/embed/jRlZgDNzieU?si=jDtuZH2SrB0w6Smg"
+      title: "YouTube video player"
+    - url: "https://www.youtube.com/embed/UtuzJxWTj5g?si=OFQbqJ8_OKIJVtCC"
+      title: "YouTube video player"
+    - url: "https://www.youtube.com/embed/TcauK34vvOQ?si=-YHpcD20R1sAfWpt"
+      title: "YouTube video player"
+    - url: "https://www.youtube.com/embed/0IdyIMfvbQw?si=HuIIcCmOF3NeXER6"
+      title: "YouTube video player"
+    - url: "https://www.youtube.com/embed/3M4Tvdnza58?si=yAJWGeLlE7U9FH_-"
+      title: "YouTube video player"

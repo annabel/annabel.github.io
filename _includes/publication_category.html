@@ -1,0 +1,31 @@
+<div class="mt-2">
+  <h3 class="text-2xl text-pink-600 dark:text-emerald-500">
+    {{ include.category }}
+  </h3>
+  <div class="text-md sm:text-xl max-w-prose">
+    {{ include.description | markdownify }}
+  </div>
+  <div class="pl-5">
+    <ul>
+      {% for item in include.items %}
+      <li class="list-disc text-md sm:text-xl mt-5">
+        {% if item.link %}
+        <span class="font-semibold">{{ item.title }}</span>
+        <span class="italic">
+          <a
+            class="text-orange-600 dark:text-teal-500"
+            href="{{ item.link }}"
+            target="_blank"
+            >{{ item.title }}</a
+          >
+        </span>
+        {% else %}
+        <span class="font-semibold">{{ item.title }}</span>
+        {% endif %} {% for detail in item.details %}
+        <span class="block">{{ detail | markdownify }}</span>
+        {% endfor %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

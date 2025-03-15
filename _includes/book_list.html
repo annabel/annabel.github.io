@@ -1,0 +1,15 @@
+<ul class="text-lg sm:text-xl">
+  {% for book in include.books %}
+  <li class="list-disc ml-7 my-3">
+    <a
+      href="{{ book.url }}"
+      class="italic hover:underline underline-offset-4"
+      target="_blank"
+    >
+      {{ book.title }}
+    </a>
+    by {{ book.author }} {% if book.extra %} {{ book.extra | markdownify }} {%
+    endif %}
+  </li>
+  {% endfor %}
+</ul>

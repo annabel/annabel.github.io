@@ -1,0 +1,28 @@
+- category: "Photography exhibitions"
+  description: "Exhibitions where my work appeared during my college and early post-graduate days, before I switched gears to web development in 2013."
+  items:
+    - title: "Smithsonian Institution"
+      link: "https://americanhistory.si.edu/explore/stories/gift-artist-photographers-donors"
+      details:
+        - "Washington, DC, 2011/11/11 - 2012/02/29"
+        - '<a class="text-orange-600 dark:text-teal-500" href="https://collections.si.edu/search/detail/ead_component:sova-nmah-ac-1253-ref513?q=annabel+dunstone&record=2&hlterm=annabel%2Bdunstone" target="_blank">"Lockhart Car Crash"</a>'
+    - title: "The Contemporary Austin"
+      link: "https://thecontemporaryaustin.org/event/five-x-seven/"
+      details:
+        - "Austin, TX, 2012"
+        - 'Untitled image, "Structure" series'
+    - title: "St. Edward's University"
+      details:
+        - "Austin, TX, 2012"
+        - '"Structure" series'
+    - title: "The Contemporary Austin"
+      link: "https://thecontemporaryaustin.org/event/five-x-seven/"
+      details:
+        - "Austin, TX, 2013"
+        - "Lacul Bâlea"
+
+- category: "Writing"
+  description: "A small (okay, very <span class='italic'>very</span> small) selection of blog posts I've written."
+  items:
+    - title: "How I transitioned from frontend to UX"
+      link: "https://about.gitlab.com/blog/2018/10/05/how-i-transitioned-from-frontend-to-ux/"

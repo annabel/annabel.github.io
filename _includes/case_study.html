@@ -1,0 +1,31 @@
+<section class="py-20 md:-mx-4">
+  <div
+    class="px-4 md:px-24 py-8 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#9ca3af_1px,transparent_1px)] [background-size:16px_16px] dark:bg-neutral-800"
+  >
+    <h2 class="text-4xl mb-4">Recent work</h2>
+    <div
+      class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-white text-sm font-semibold leading-6 rounded-lg"
+    >
+      {% for case in include.cases %}
+      <div
+        class="p-4 text-xl rounded-lg min-h-48 case-study bg-gradient-to-r {{ case.gradient }} {{ case.dark_gradient }}"
+      >
+        <h3 class="text-2xl mb-4">{{ case.title }}</h3>
+        <img
+          class="w-108 mb-5 rounded"
+          src="{{ case.image }}"
+          alt="{{ case.title }}"
+        />
+        <div class="flex gap-2 flex-wrap">
+          {% for tag in case.tags %}
+          <span
+            class="whitespace-nowrap rounded-full bg-white/25 px-3 py-1 text-sm text-white"
+            >{{ tag }}</span
+          >
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
