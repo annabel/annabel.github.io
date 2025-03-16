@@ -6,7 +6,7 @@
       link: "https://americanhistory.si.edu/explore/stories/gift-artist-photographers-donors"
       details:
         - "Washington, DC, November 2011 - March 2013"
-        - '<a class="text-orange-600 dark:text-teal-500 hover:underline underline-offset-4" href="https://collections.si.edu/search/detail/ead_component:sova-nmah-ac-1253-ref513?q=annabel+dunstone&record=2&hlterm=annabel%2Bdunstone" target="_blank">"Lockhart Car Crash"</a>'
+        - '<a class="text-orange-600 dark:text-teal-500 underline underline-offset-4 decoration-1" href="https://collections.si.edu/search/detail/ead_component:sova-nmah-ac-1253-ref513?q=annabel+dunstone&record=2&hlterm=annabel%2Bdunstone" target="_blank">"Lockhart Car Crash"</a>'
     - title: "The Contemporary Austin"
       exhibition: "Five x Seven"
       link: "https://thecontemporaryaustin.org/event/five-x-seven/"

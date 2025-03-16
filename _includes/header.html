@@ -3,11 +3,13 @@
     <a href="/" class="tracking-wide flex gap-1 items-center">
       <div class="inline">ANNABEL</div>
       <div class="h-4 w-4 bg-gray-400 rounded inline-block"></div>
-      <div class="inline">GRAY</div>
+      <div class="hidden sm:inline">GRAY</div>
     </a>
-    <ul class="flex space-x-6 items-center">
-      <li class="hidden sm:flex items-center gap-1">
-        <a href="/media/" class="hover:text-pink-600 dark:hover:text-teal-200"
+    <ul class="flex space-x-5 items-center">
+      <li class="flex items-center gap-1">
+        <a
+          href="/media/"
+          class="hover:text-pink-600 dark:hover:text-teal-200{% if page.url == '/media/' %} text-pink-600 underline underline-offset-4{% endif %}"
           >Media</a
         >
       </li>

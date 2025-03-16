@@ -3,13 +3,12 @@
   <li class="list-disc ml-7 my-3">
     <a
       href="{{ book.url }}"
-      class="italic hover:underline underline-offset-4 text-orange-600 dark:text-teal-500"
+      class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500"
       target="_blank"
-    >
-      {{ book.title }}
-    </a>
-    by {{ book.author }} {% if book.extra %} {{ book.extra | markdownify }} {%
-    endif %}
+      >{{- book.title | strip -}}</a
+    ><!-- No space between </a> and next element -->
+    <span class="mx-1">by</span> {{- book.author | strip -}}{% if book.extra %}
+    {{ book.extra | markdownify | strip }}{% endif %}
   </li>
   {% endfor %}
 </ul>

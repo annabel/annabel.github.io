@@ -51,18 +51,20 @@
     <link rel="manifest" href="/assets/site.webmanifest" />
   </head>
 
-  <body class="bg-white dark:bg-neutral-800 text-gray-800 dark:text-gray-100">
+  <body class="bg-white dark:bg-neutral-800 text-gray-700 dark:text-gray-100">
     <!-- Header -->
     <header class="p-4">
   <nav class="max-w-7xl mx-auto flex justify-between items-center">
     <a href="/" class="tracking-wide flex gap-1 items-center">
       <div class="inline">ANNABEL</div>
       <div class="h-4 w-4 bg-gray-400 rounded inline-block"></div>
-      <div class="inline">GRAY</div>
+      <div class="hidden sm:inline">GRAY</div>
     </a>
-    <ul class="flex space-x-6 items-center">
-      <li class="hidden sm:flex items-center gap-1">
-        <a href="/media/" class="hover:text-pink-600 dark:hover:text-teal-200"
+    <ul class="flex space-x-5 items-center">
+      <li class="flex items-center gap-1">
+        <a
+          href="/media/"
+          class="hover:text-pink-600 dark:hover:text-teal-200"
           >Media</a
         >
       </li>
@@ -142,13 +144,13 @@
 <!-- Case studies -->
 
 <section class="py-20 md:-mx-4">
-  <div class="px-4 md:px-24 py-8 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#9ca3af_1px,transparent_1px)] [background-size:16px_16px] dark:bg-neutral-800">
+  <div class="px-4 md:px-24 py-8 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#c1c3c7_1px,transparent_1px)] [background-size:16px_16px] dark:bg-neutral-800">
     <h2 class="text-4xl mb-4">Recent work</h2>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-white text-sm font-semibold leading-6 rounded-lg">
       
       <div class="p-4 text-xl rounded-lg min-h-48 case-study bg-gradient-to-r from-red-400 via-orange-500 to-pink-400 dark:from-emerald-800 dark:via-teal-800 dark:to-slate-600">
-        <h3 class="text-2xl mb-4">UX Papercuts</h3>
-        <img class="w-108 mb-5 rounded" src="/assets/images/papercuts.png" alt="UX Papercuts" />
+        <h3 class="text-2xl mb-4">UX Paper Cuts</h3>
+        <img class="w-108 mb-5 rounded" src="/assets/images/papercuts.png" alt="UX Paper Cuts" />
         <div class="flex gap-2 flex-wrap">
           
           <span class="whitespace-nowrap rounded-full bg-white/25 px-3 py-1 text-sm text-white">Design</span>
@@ -211,39 +213,29 @@
           <ul class="text-lg sm:text-xl">
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/34466963-why-we-sleep" class="italic hover:underline underline-offset-4 text-orange-600 dark:text-teal-500" target="_blank">
-      Why We Sleep
-    </a>
-    by Matthew Walker 
+    <a href="https://www.goodreads.com/book/show/34466963-why-we-sleep" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">Why We Sleep</a><!-- No space between </a> and next element -->
+    <span class="mx-1">by</span>Matthew Walker
   </li>
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/76705490-crown-of-midnight" class="italic hover:underline underline-offset-4 text-orange-600 dark:text-teal-500" target="_blank">
-      Crown of Midnight
-    </a>
-    by Sarah J. Maas 
+    <a href="https://www.goodreads.com/book/show/76705490-crown-of-midnight" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">Crown of Midnight</a><!-- No space between </a> and next element -->
+    <span class="mx-1">by</span>Sarah J. Maas
   </li>
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/7235533-the-way-of-kings" class="italic hover:underline underline-offset-4 text-orange-600 dark:text-teal-500" target="_blank">
-      The Way of Kings (The Stormlight Archive)
-    </a>
-    by Brandon Sanderson 
+    <a href="https://www.goodreads.com/book/show/7235533-the-way-of-kings" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">The Way of Kings (The Stormlight Archive)</a><!-- No space between </a> and next element -->
+    <span class="mx-1">by</span>Brandon Sanderson
   </li>
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/18803640-h-is-for-hawk" class="italic hover:underline underline-offset-4 text-orange-600 dark:text-teal-500" target="_blank">
-      H is for Hawk
-    </a>
-    by Helen Macdonald 
+    <a href="https://www.goodreads.com/book/show/18803640-h-is-for-hawk" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">H is for Hawk</a><!-- No space between </a> and next element -->
+    <span class="mx-1">by</span>Helen Macdonald
   </li>
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/68521605-anna-karenina-by-tolstoy-leo-pevear-richard-trn-volokhonsky-larissa-trn" class="italic hover:underline underline-offset-4 text-orange-600 dark:text-teal-500" target="_blank">
-      Anna Karenina
-    </a>
-    by Leo Tolstoy  <p>(We did a book club at work last year reading <span class="italic">War and Peace</span> one chapter a day so I’m doing something similar this year!)</p>
- 
+    <a href="https://www.goodreads.com/book/show/68521605-anna-karenina-by-tolstoy-leo-pevear-richard-trn-volokhonsky-larissa-trn" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">Anna Karenina</a><!-- No space between </a> and next element -->
+    <span class="mx-1">by</span>Leo Tolstoy
+    <p>(We did a book club at work last year reading <span class="italic">War and Peace</span> one chapter a day so I’m doing something similar this year!)</p>
   </li>
   
 </ul>
@@ -252,38 +244,28 @@
           <ul class="text-lg sm:text-xl">
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/43582376-the-body" class="italic hover:underline underline-offset-4 text-orange-600 dark:text-teal-500" target="_blank">
-      The Body: A Guide for Occupants
-    </a>
-    by Bill Bryson 
+    <a href="https://www.goodreads.com/book/show/43582376-the-body" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">The Body: A Guide for Occupants</a><!-- No space between </a> and next element -->
+    <span class="mx-1">by</span>Bill Bryson
   </li>
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/199116301-a-talent-for-murder" class="italic hover:underline underline-offset-4 text-orange-600 dark:text-teal-500" target="_blank">
-      A Talent for Murder
-    </a>
-    by Peter Swanson 
+    <a href="https://www.goodreads.com/book/show/199116301-a-talent-for-murder" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">A Talent for Murder</a><!-- No space between </a> and next element -->
+    <span class="mx-1">by</span>Peter Swanson
   </li>
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/76703559-throne-of-glass" class="italic hover:underline underline-offset-4 text-orange-600 dark:text-teal-500" target="_blank">
-      Throne of Glass
-    </a>
-    by Sarah J. Maas 
+    <a href="https://www.goodreads.com/book/show/76703559-throne-of-glass" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">Throne of Glass</a><!-- No space between </a> and next element -->
+    <span class="mx-1">by</span>Sarah J. Maas
   </li>
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/96884.The_Happiness_Hypothesis" class="italic hover:underline underline-offset-4 text-orange-600 dark:text-teal-500" target="_blank">
-      The Happiness Hypothesis
-    </a>
-    by Jonathan Haidt 
+    <a href="https://www.goodreads.com/book/show/96884.The_Happiness_Hypothesis" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">The Happiness Hypothesis</a><!-- No space between </a> and next element -->
+    <span class="mx-1">by</span>Jonathan Haidt
   </li>
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/207252770-the-blue-hour" class="italic hover:underline underline-offset-4 text-orange-600 dark:text-teal-500" target="_blank">
-      The Blue Hour
-    </a>
-    by Paula Hawkins 
+    <a href="https://www.goodreads.com/book/show/207252770-the-blue-hour" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">The Blue Hour</a><!-- No space between </a> and next element -->
+    <span class="mx-1">by</span>Paula Hawkins
   </li>
   
 </ul>
@@ -298,7 +280,7 @@
     <!-- Footer -->
     <footer class="mt-14">
   <div
-    class="px-4 md:px-24 py-8 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#9ca3af_1px,transparent_1px)] [background-size:16px_16px] dark:bg-neutral-800"
+    class="px-4 md:px-24 py-8 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#c1c3c7_1px,transparent_1px)] [background-size:16px_16px] dark:bg-neutral-800"
   >
     <h2 class="text-4xl mb-4">Contact</h2>
     <div
