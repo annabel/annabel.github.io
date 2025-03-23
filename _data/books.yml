@@ -1,13 +1,16 @@
 currently_reading:
+  - title: "Careless People"
+    author: "Sarah Wynn-Williams"
+    url: "https://www.goodreads.com/book/show/223436601-careless-people"
+  - title: "The 4-Hour Workweek"
+    author: Timothy Ferriss
+    url: "https://www.goodreads.com/book/show/368593.The_4_Hour_Workweek"
   - title: "Why We Sleep"
     author: "Matthew Walker"
     url: "https://www.goodreads.com/book/show/34466963-why-we-sleep"
   - title: "Crown of Midnight"
     author: "Sarah J. Maas"
     url: "https://www.goodreads.com/book/show/76705490-crown-of-midnight"
-  - title: "The Way of Kings (The Stormlight Archive)"
-    author: "Brandon Sanderson"
-    url: "https://www.goodreads.com/book/show/7235533-the-way-of-kings"
   - title: "H is for Hawk"
     author: "Helen Macdonald"
     url: "https://www.goodreads.com/book/show/18803640-h-is-for-hawk"
@@ -17,6 +20,9 @@ currently_reading:
     extra: '(We did a book club at work last year reading <span class="italic">War and Peace</span> one chapter a day so I''m doing something similar this year!)'
 
 recently_finished:
+  - title: "The Way of Kings (The Stormlight Archive)"
+    author: "Brandon Sanderson"
+    url: "https://www.goodreads.com/book/show/7235533-the-way-of-kings"
   - title: "The Body: A Guide for Occupants"
     author: "Bill Bryson"
     url: "https://www.goodreads.com/book/show/43582376-the-body"
