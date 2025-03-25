@@ -1,10 +1,13 @@
 currently_reading:
+  - title: "Words of Radiance (The Stormlight Archive)"
+    author: "Brandon Sanderson"
+    url: "https://www.goodreads.com/book/show/17332218-words-of-radiance"
+  - title: "Tiny Experiments"
+    author: "Anne-Laure Le Cunff"
+    url: "https://www.goodreads.com/book/show/214268997-tiny-experiments"
   - title: "Careless People"
     author: "Sarah Wynn-Williams"
     url: "https://www.goodreads.com/book/show/223436601-careless-people"
-  - title: "The 4-Hour Workweek"
-    author: Timothy Ferriss
-    url: "https://www.goodreads.com/book/show/368593.The_4_Hour_Workweek"
   - title: "Why We Sleep"
     author: "Matthew Walker"
     url: "https://www.goodreads.com/book/show/34466963-why-we-sleep"
@@ -23,6 +26,9 @@ recently_finished:
   - title: "The Way of Kings (The Stormlight Archive)"
     author: "Brandon Sanderson"
     url: "https://www.goodreads.com/book/show/7235533-the-way-of-kings"
+  - title: "The 4-Hour Workweek"
+    author: Timothy Ferriss
+    url: "https://www.goodreads.com/book/show/368593.The_4_Hour_Workweek"
   - title: "The Body: A Guide for Occupants"
     author: "Bill Bryson"
     url: "https://www.goodreads.com/book/show/43582376-the-body"
