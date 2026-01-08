@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
 body {
   opacity: 0;
   transition: opacity 350ms ease-in;
@@ -28,16 +30,18 @@ body.loaded {
 .handwritten-overlay {
   position: absolute;
   left: -6px;
-  top: -5px;
+  top: -6px;
   color: #1aff00;
   font-weight: bold;
-  font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
-  font-size: 1em;
+  font-family: "Indie Flower", "Comic Sans MS", "Comic Sans", cursive,
+    sans-serif;
+  font-size: 1.4em;
   pointer-events: none;
   transform: translateX(0.15em) rotate(-8deg) scale(1.1);
   text-shadow: 2px 2px 0 #00350d, 2px 2px 2px #0002;
   white-space: nowrap;
   clip-path: inset(0 100% 0 0);
+  padding-right: 5px;
 }
 
 .handwritten-overlay.stamp-in {
