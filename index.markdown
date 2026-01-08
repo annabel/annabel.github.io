@@ -17,10 +17,15 @@ title: Home
       >product designer</span
     >, currently at
     <a
-      href="https://gitlab.com/annabeldunstone"
-      class="hover:underline underline-offset-4"
-      >GitLab</a
+      href="https://github.com/annabel"
+      class="relative inline-block"
+      style="position:relative; display:inline-block;"
     >
+      Git<span style="position:relative; display:inline-block;">
+        <span>Lab</span>
+        <span class="handwritten-overlay">Hub</span>
+      </span>
+    </a>
   </h1>
   <div
     class="relative top-4 md:-left-20 md:top-14 h-48 w-48 mx-auto md:mx-0"
@@ -28,6 +33,17 @@ title: Home
     <img src="/assets/images/notion-avatar.png" class="avatar" />
   </div>
 </section>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      var overlay = document.querySelector('.handwritten-overlay');
+      if (overlay) {
+        overlay.classList.add('write-in');
+      }
+    }, 1800);
+  });
+</script>
 
 <!-- Case studies -->
 
