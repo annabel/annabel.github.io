@@ -20,7 +20,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        darkMode: "selector",
         theme: {
           extend: {
             colors: {},
@@ -51,7 +50,7 @@
     <link rel="manifest" href="/assets/site.webmanifest" />
   </head>
 
-  <body class="bg-white dark:bg-neutral-800 text-gray-700 dark:text-gray-100">
+  <body class="bg-white text-gray-700">
     <!-- Header -->
     <header class="p-4">
   <nav class="max-w-7xl mx-auto flex justify-between items-center">
@@ -64,63 +63,19 @@
       <li class="flex items-center gap-1">
         <a
           href="/media/"
-          class="hover:text-pink-600 dark:hover:text-teal-200"
+          class="hover:text-pink-600"
           >Media</a
         >
       </li>
       <li class="hidden sm:flex items-center gap-1">
-        <a href="#" class="hover:text-pink-600 dark:hover:text-teal-200"
+        <a href="#" class="hover:text-pink-600"
           >Photography</a
         >
         <div
-          class="px-1 rounded-lg text-xs bg-red-400 text-white dark:bg-emerald-700"
+          class="px-1 rounded-lg text-xs bg-red-400 text-white"
         >
           soon
         </div>
-      </li>
-      <li>
-        <label
-          for="dark-mode-toggle"
-          class="top-1 relative inline-block h-8 w-14 cursor-pointer rounded-full bg-orange-400 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-neutral-600"
-          aria-label="Toggle dark mode"
-          title="Toggle dark mode"
-        >
-          <input
-            type="checkbox"
-            id="dark-mode-toggle"
-            class="peer sr-only [&:checked_+_span_div[data-checked-icon]]:block [&:checked_+_span_div[data-unchecked-icon]]:hidden"
-          />
-          <span
-            class="absolute inset-y-0 start-0 z-10 m-1 inline-flex size-6 items-center justify-center rounded-full bg-white transition-all peer-checked:start-6"
-          >
-            <div data-unchecked-icon class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="18px"
-                viewBox="0 -960 960 960"
-                width="18px"
-                fill="#fb923c"
-              >
-                <path
-                  d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
-                />
-              </svg>
-            </div>
-            <div data-checked-icon class="hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="18px"
-                viewBox="0 -960 960 960"
-                width="18px"
-                fill="#262626"
-              >
-                <path
-                  d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
-                />
-              </svg>
-            </div>
-          </span>
-        </label>
       </li>
     </ul>
   </nav>
@@ -160,11 +115,11 @@
 <!-- Case studies -->
 
 <section class="py-20 md:-mx-4">
-  <div class="px-4 md:px-24 py-8 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#c1c3c7_1px,transparent_1px)] [background-size:16px_16px] dark:bg-neutral-800">
+  <div class="px-4 md:px-24 py-8 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#c1c3c7_1px,transparent_1px)] [background-size:16px_16px]">
     <h2 class="text-4xl mb-4">Recent work</h2>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-white text-sm font-semibold leading-6 rounded-lg">
       
-      <div class="p-4 text-xl rounded-lg min-h-48 case-study bg-gradient-to-r from-red-400 via-orange-500 to-pink-400 dark:from-emerald-800 dark:via-teal-800 dark:to-slate-600">
+      <div class="p-4 text-xl rounded-lg min-h-48 case-study bg-gradient-to-r from-red-400 via-orange-500 to-pink-400">
         <h3 class="text-2xl mb-4">UX Paper Cuts</h3>
         <img class="w-108 mb-5 rounded" src="/assets/images/papercuts.png" alt="UX Paper Cuts" />
         <div class="flex gap-2 flex-wrap">
@@ -182,7 +137,7 @@
         </div>
       </div>
       
-      <div class="p-4 text-xl rounded-lg min-h-48 case-study bg-gradient-to-r from-pink-400 via-orange-500 to-red-400 dark:from-slate-600 dark:via-teal-800 dark:to-emerald-800">
+      <div class="p-4 text-xl rounded-lg min-h-48 case-study bg-gradient-to-r from-pink-400 via-orange-500 to-red-400">
         <h3 class="text-2xl mb-4">Merge requests</h3>
         <img class="w-108 mb-5 rounded" src="/assets/images/merge-requests.png" alt="Merge requests" />
         <div class="flex gap-2 flex-wrap">
@@ -229,17 +184,17 @@
           <ul class="text-lg sm:text-xl">
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/34002132-oathbringer" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">Oathbringer (The Stormlight Archive #3)</a><!-- No space between </a> and next element -->
+    <a href="https://www.goodreads.com/book/show/34002132-oathbringer" class="italic underline underline-offset-4 decoration-1 text-orange-600" target="_blank">Oathbringer (The Stormlight Archive #3)</a><!-- No space between </a> and next element -->
     <span class="mx-1">by</span>Brandon Sanderson
   </li>
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/24.In_a_Sunburned_Country" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">In a Sunburned Country</a><!-- No space between </a> and next element -->
+    <a href="https://www.goodreads.com/book/show/24.In_a_Sunburned_Country" class="italic underline underline-offset-4 decoration-1 text-orange-600" target="_blank">In a Sunburned Country</a><!-- No space between </a> and next element -->
     <span class="mx-1">by</span>Bill Bryson
   </li>
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/18803640-h-is-for-hawk" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">H is for Hawk</a><!-- No space between </a> and next element -->
+    <a href="https://www.goodreads.com/book/show/18803640-h-is-for-hawk" class="italic underline underline-offset-4 decoration-1 text-orange-600" target="_blank">H is for Hawk</a><!-- No space between </a> and next element -->
     <span class="mx-1">by</span>Helen Macdonald
   </li>
   
@@ -249,27 +204,27 @@
           <ul class="text-lg sm:text-xl">
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/65215677-exit-interview" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">Exit Interview</a><!-- No space between </a> and next element -->
+    <a href="https://www.goodreads.com/book/show/65215677-exit-interview" class="italic underline underline-offset-4 decoration-1 text-orange-600" target="_blank">Exit Interview</a><!-- No space between </a> and next element -->
     <span class="mx-1">by</span>Kristi Coulter
   </li>
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/48989372-a-very-punchable-face" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">A Very Punchable Face</a><!-- No space between </a> and next element -->
+    <a href="https://www.goodreads.com/book/show/48989372-a-very-punchable-face" class="italic underline underline-offset-4 decoration-1 text-orange-600" target="_blank">A Very Punchable Face</a><!-- No space between </a> and next element -->
     <span class="mx-1">by</span>Colin Jost
   </li>
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/231148075-the-art-of-spending-money" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">The Art of Spending Money</a><!-- No space between </a> and next element -->
+    <a href="https://www.goodreads.com/book/show/231148075-the-art-of-spending-money" class="italic underline underline-offset-4 decoration-1 text-orange-600" target="_blank">The Art of Spending Money</a><!-- No space between </a> and next element -->
     <span class="mx-1">by</span>Morgan Housel
   </li>
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/7507825-at-home" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">At Home: A Short History of Private Life</a><!-- No space between </a> and next element -->
+    <a href="https://www.goodreads.com/book/show/7507825-at-home" class="italic underline underline-offset-4 decoration-1 text-orange-600" target="_blank">At Home: A Short History of Private Life</a><!-- No space between </a> and next element -->
     <span class="mx-1">by</span>Bill Bryson
   </li>
   
   <li class="list-disc ml-7 my-3">
-    <a href="https://www.goodreads.com/book/show/220239083-a-marriage-at-sea" class="italic underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" target="_blank">A Marriage at Sea</a><!-- No space between </a> and next element -->
+    <a href="https://www.goodreads.com/book/show/220239083-a-marriage-at-sea" class="italic underline underline-offset-4 decoration-1 text-orange-600" target="_blank">A Marriage at Sea</a><!-- No space between </a> and next element -->
     <span class="mx-1">by</span>Sophie Elmhirst
   </li>
   
@@ -285,11 +240,11 @@
     <!-- Footer -->
     <footer class="mt-14">
   <div
-    class="px-4 md:px-24 py-8 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#c1c3c7_1px,transparent_1px)] [background-size:16px_16px] dark:bg-neutral-800"
+    class="px-4 md:px-24 py-8 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#c1c3c7_1px,transparent_1px)] [background-size:16px_16px]"
   >
     <h2 class="text-4xl mb-4">Contact</h2>
     <div
-      class="text-lg px-4 py-2 rounded-lg case-study bg-gradient-to-r from-pink-400 via-orange-500 to-red-400 dark:from-emerald-800 dark:via-teal-800 dark:to-slate-600 text-white"
+      class="text-lg px-4 py-2 rounded-lg case-study bg-gradient-to-r from-pink-400 via-orange-500 to-red-400 text-white"
     >
       <div>
         <div class="hidden md:inline md:mr-3 font-semibold">

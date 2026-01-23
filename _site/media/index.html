@@ -20,7 +20,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        darkMode: "selector",
         theme: {
           extend: {
             colors: {},
@@ -51,7 +50,7 @@
     <link rel="manifest" href="/assets/site.webmanifest" />
   </head>
 
-  <body class="bg-white dark:bg-neutral-800 text-gray-700 dark:text-gray-100">
+  <body class="bg-white text-gray-700">
     <!-- Header -->
     <header class="p-4">
   <nav class="max-w-7xl mx-auto flex justify-between items-center">
@@ -64,63 +63,19 @@
       <li class="flex items-center gap-1">
         <a
           href="/media/"
-          class="hover:text-pink-600 dark:hover:text-teal-200 text-pink-600 dark:text-teal-200 underline underline-offset-4"
+          class="hover:text-pink-600 text-pink-600 underline underline-offset-4"
           >Media</a
         >
       </li>
       <li class="hidden sm:flex items-center gap-1">
-        <a href="#" class="hover:text-pink-600 dark:hover:text-teal-200"
+        <a href="#" class="hover:text-pink-600"
           >Photography</a
         >
         <div
-          class="px-1 rounded-lg text-xs bg-red-400 text-white dark:bg-emerald-700"
+          class="px-1 rounded-lg text-xs bg-red-400 text-white"
         >
           soon
         </div>
-      </li>
-      <li>
-        <label
-          for="dark-mode-toggle"
-          class="top-1 relative inline-block h-8 w-14 cursor-pointer rounded-full bg-orange-400 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-neutral-600"
-          aria-label="Toggle dark mode"
-          title="Toggle dark mode"
-        >
-          <input
-            type="checkbox"
-            id="dark-mode-toggle"
-            class="peer sr-only [&:checked_+_span_div[data-checked-icon]]:block [&:checked_+_span_div[data-unchecked-icon]]:hidden"
-          />
-          <span
-            class="absolute inset-y-0 start-0 z-10 m-1 inline-flex size-6 items-center justify-center rounded-full bg-white transition-all peer-checked:start-6"
-          >
-            <div data-unchecked-icon class="">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="18px"
-                viewBox="0 -960 960 960"
-                width="18px"
-                fill="#fb923c"
-              >
-                <path
-                  d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
-                />
-              </svg>
-            </div>
-            <div data-checked-icon class="hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="18px"
-                viewBox="0 -960 960 960"
-                width="18px"
-                fill="#262626"
-              >
-                <path
-                  d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
-                />
-              </svg>
-            </div>
-          </span>
-        </label>
       </li>
     </ul>
   </nav>
@@ -135,7 +90,7 @@
     <div class="flex gap-8 flex-col">
       
         <div class="mt-2">
-  <h3 class="text-2xl text-pink-600 dark:text-emerald-500">
+  <h3 class="text-2xl text-pink-600">
     Photography exhibitions
   </h3>
   <div class="text-md sm:text-xl max-w-prose">
@@ -150,7 +105,7 @@
         <span class="font-semibold">Smithsonian Institution</span>
         
         <span class="italic">
-          <a class="underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" href="https://americanhistory.si.edu/explore/stories/gift-artist-photographers-donors" target="_blank">
+          <a class="underline underline-offset-4 decoration-1 text-orange-600" href="https://americanhistory.si.edu/explore/stories/gift-artist-photographers-donors" target="_blank">
             Gift of the Artist
           </a>
         </span>
@@ -158,7 +113,7 @@
         <span class="block"><p>Washington, DC, November 2011 - March 2013</p>
 </span>
         
-        <span class="block"><p><a class="text-orange-600 dark:text-teal-500 underline underline-offset-4 decoration-1" href="https://collections.si.edu/search/detail/ead_component:sova-nmah-ac-1253-ref513?q=annabel+dunstone&amp;record=2&amp;hlterm=annabel%2Bdunstone" target="_blank">“Lockhart Car Crash”</a></p>
+        <span class="block"><p><a class="text-orange-600 underline underline-offset-4 decoration-1" href="https://collections.si.edu/search/detail/ead_component:sova-nmah-ac-1253-ref513?q=annabel+dunstone&amp;record=2&amp;hlterm=annabel%2Bdunstone" target="_blank">“Lockhart Car Crash”</a></p>
 </span>
         
       </li>
@@ -168,7 +123,7 @@
         <span class="font-semibold">The Contemporary Austin</span>
         
         <span class="italic">
-          <a class="underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" href="https://thecontemporaryaustin.org/event/five-x-seven/" target="_blank">
+          <a class="underline underline-offset-4 decoration-1 text-orange-600" href="https://thecontemporaryaustin.org/event/five-x-seven/" target="_blank">
             Five x Seven
           </a>
         </span>
@@ -200,7 +155,7 @@
         <span class="font-semibold">The Contemporary Austin</span>
         
         <span class="italic">
-          <a class="underline underline-offset-4 decoration-1 text-orange-600 dark:text-teal-500" href="https://thecontemporaryaustin.org/event/five-x-seven/" target="_blank">
+          <a class="underline underline-offset-4 decoration-1 text-orange-600" href="https://thecontemporaryaustin.org/event/five-x-seven/" target="_blank">
             Five x Seven
           </a>
         </span>
@@ -220,7 +175,7 @@
         
       
         <div class="mt-2">
-  <h3 class="text-2xl text-pink-600 dark:text-emerald-500">
+  <h3 class="text-2xl text-pink-600">
     Writing
   </h3>
   <div class="text-md sm:text-xl max-w-prose">
@@ -232,7 +187,7 @@
       
       <li class="list-disc text-md sm:text-xl mt-5">
          
-        <a class="font-semibold italic underline underline-offset-4 decoration-1 decoration-1 text-orange-600 dark:text-teal-500" href="https://about.gitlab.com/blog/2018/10/05/how-i-transitioned-from-frontend-to-ux/" target="_blank">
+        <a class="font-semibold italic underline underline-offset-4 decoration-1 decoration-1 text-orange-600" href="https://about.gitlab.com/blog/2018/10/05/how-i-transitioned-from-frontend-to-ux/" target="_blank">
           <span class="font-normal">How I transitioned from frontend to UX</span>
         </a>
           
@@ -255,7 +210,7 @@
     <div class="flex gap-8 flex-col w-full">
       
         <div class="mt-2">
-  <h3 class="text-2xl text-pink-600 dark:text-emerald-500">
+  <h3 class="text-2xl text-pink-600">
     Development
   </h3>
   <div class="text-md sm:text-xl mb-5 max-w-prose">
@@ -277,7 +232,7 @@
         
       
         <div class="mt-2">
-  <h3 class="text-2xl text-pink-600 dark:text-emerald-500">
+  <h3 class="text-2xl text-pink-600">
     UX Research
   </h3>
   <div class="text-md sm:text-xl mb-5 max-w-prose">
@@ -299,7 +254,7 @@
         
       
         <div class="mt-2">
-  <h3 class="text-2xl text-pink-600 dark:text-emerald-500">
+  <h3 class="text-2xl text-pink-600">
     Design
   </h3>
   <div class="text-md sm:text-xl mb-5 max-w-prose">
@@ -344,11 +299,11 @@
     <!-- Footer -->
     <footer class="mt-14">
   <div
-    class="px-4 md:px-24 py-8 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#c1c3c7_1px,transparent_1px)] [background-size:16px_16px] dark:bg-neutral-800"
+    class="px-4 md:px-24 py-8 relative inset-0 h-full w-full bg-white bg-[radial-gradient(#c1c3c7_1px,transparent_1px)] [background-size:16px_16px]"
   >
     <h2 class="text-4xl mb-4">Contact</h2>
     <div
-      class="text-lg px-4 py-2 rounded-lg case-study bg-gradient-to-r from-pink-400 via-orange-500 to-red-400 dark:from-emerald-800 dark:via-teal-800 dark:to-slate-600 text-white"
+      class="text-lg px-4 py-2 rounded-lg case-study bg-gradient-to-r from-pink-400 via-orange-500 to-red-400 text-white"
     >
       <div>
         <div class="hidden md:inline md:mr-3 font-semibold">
