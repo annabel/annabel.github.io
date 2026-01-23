@@ -7,7 +7,6 @@
     - "Feature flags"
     - "Project management"
   gradient: "from-red-400 via-orange-500 to-pink-400"
-  dark_gradient: "dark:from-emerald-800 dark:via-teal-800 dark:to-slate-600"
 
 - title: "Merge requests"
   image: "/assets/images/merge-requests.png"
@@ -15,4 +14,3 @@
     - "UX research"
     - Design
   gradient: "from-pink-400 via-orange-500 to-red-400"
-  dark_gradient: "dark:from-slate-600 dark:via-teal-800 dark:to-emerald-800"
