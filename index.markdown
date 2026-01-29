@@ -1,87 +1,99 @@
 ---
 layout: default
-title: Home
+title: Welcome
 ---
 
-<!-- Intro -->
-<section
-  class="pt-12 sm:pt-32 pb-16 sm:pb-52 md:flex mx-auto justify-center text-center md:text-left md:pl-10"
->
-  <h1
-    class="text-3xl md:text-5xl max-w-xl mx-auto md:mx-0 md:max-w-lg px-4 md:px-0"
-  >
-    I'm Annabel and I'm a
-    <span class="line-through old-job">frontend developer</span>
-    <span
-      class="font-extrabold bg-gradient-to-r from-red-400 via-orange-500 to-pink-600 dark:from-emerald-700 dark:via-teal-600 dark:to-slate-400 bg-clip-text text-transparent"
-      >product designer</span
-    >, currently at
-    <a
-      href="https://github.com/annabel"
-      class="relative inline-block"
-      style="position:relative; display:inline-block;"
-    >
-      Git<span style="position:relative; display:inline-block;">
-        <span>Lab</span>
-        <span class="handwritten-overlay">Hub</span>
-      </span>
-    </a>
-  </h1>
-  <div
-    class="relative top-4 md:-left-20 md:top-14 h-48 w-48 mx-auto md:mx-0"
-  >
-    <img src="/assets/images/notion-avatar.png" class="avatar" />
-  </div>
-</section>
+<!-- Welcome Section -->
+<section class="min-h-[70vh] flex items-center justify-center px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <!-- Greeting -->
+    <div class="mb-8">
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-4">
+        <span class="bg-gradient-to-r from-red-400 via-orange-500 to-pink-600 dark:from-emerald-700 dark:via-teal-600 dark:to-slate-400 bg-clip-text text-transparent">
+          Welcome!
+        </span>
+      </h1>
+      <p class="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6">
+        I'm Annabel Gray
+      </p>
+      <p class="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+        A product designer passionate about creating intuitive user experiences and bringing ideas to life through thoughtful design.
+      </p>
+    </div>
 
-<script>
-  window.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-      var overlay = document.querySelector('.handwritten-overlay');
-      if (overlay) {
-        overlay.classList.add('write-in');
-      }
-    }, 1800);
-  });
-</script>
+    <!-- Branding Element -->
+    <div class="flex justify-center items-center gap-2 mb-12">
+      <div class="text-3xl font-bold tracking-wide text-gray-700 dark:text-gray-200">ANNABEL</div>
+      <div class="h-6 w-6 bg-gradient-to-br from-orange-400 to-pink-500 dark:from-emerald-600 dark:to-teal-500 rounded-full"></div>
+      <div class="text-3xl font-bold tracking-wide text-gray-700 dark:text-gray-200">GRAY</div>
+    </div>
 
-<!-- Case studies -->
-
-{% include case_study.html cases=site.data.case_studies %}
-
-<!-- About -->
-<section class="md:px-10">
-  <div class="px-4 md:px-10 lg:flex">
-    <h2 class="text-4xl mb-4 lg:mr-20 whitespace-nowrap">About me</h2>
-    <div class="flex gap-8 flex-col">
-      <div class="mt-2">
-        <h3 class="text-2xl mb-2 text-pink-600 dark:text-emerald-500">
-          Experience
-        </h3>
-        <p class="text-lg sm:text-2xl max-w-prose">
-          I'm a staff product designer with over 10 years of experience in
-          the tech industry. With a background as a frontend developer, I
-          bring a unique blend of design thinking and technical expertise
-          to every project. I'm passionate about creating intuitive user
-          experiences, and leveraging UX research to inform design
-          decisions. My approach combines a deep understanding of both
-          design and development to craft seamless, user-centered
-          products.
-        </p>
-      </div>
-      <div class="mt-2">
-        <h3 class="text-2xl mb-2 text-pink-600 dark:text-emerald-500">
-          Outside of work
-        </h3>
-        <div class="text-lg sm:text-2xl max-w-prose">
-          When I’m not working, you can usually find me baking, drawing,
-          playing with my kids, or reading a good book.
-          <div class="mt-2">I'm currently reading:</div>
-          {% include book_list.html books=site.data.books.currently_reading %}
-          <div class="mt-2">...and recently finished:</div>
-          {% include book_list.html books=site.data.books.recently_finished %}
+    <!-- Navigation Cards -->
+    <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+      <!-- About Card -->
+      <a
+        href="/about/"
+        class="group p-8 bg-gradient-to-br from-orange-50 to-pink-50 dark:from-neutral-700 dark:to-neutral-800 rounded-2xl hover:shadow-xl transition-all duration-300 hover:scale-105"
+      >
+        <div class="mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-12 w-12 mx-auto text-pink-600 dark:text-emerald-500"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+            />
+          </svg>
         </div>
-      </div>
+        <h2 class="text-2xl font-bold mb-2 text-gray-800 dark:text-gray-100 group-hover:text-pink-600 dark:group-hover:text-emerald-400">
+          About Me
+        </h2>
+        <p class="text-gray-600 dark:text-gray-300">
+          Learn about my journey, experience, and what I'm passionate about
+        </p>
+      </a>
+
+      <!-- Media Card -->
+      <a
+        href="/media/"
+        class="group p-8 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-neutral-700 dark:to-neutral-800 rounded-2xl hover:shadow-xl transition-all duration-300 hover:scale-105"
+      >
+        <div class="mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-12 w-12 mx-auto text-pink-600 dark:text-emerald-500"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+            />
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold mb-2 text-gray-800 dark:text-gray-100 group-hover:text-pink-600 dark:group-hover:text-emerald-400">
+          Media
+        </h2>
+        <p class="text-gray-600 dark:text-gray-300">
+          Explore my publications, videos, and featured work
+        </p>
+      </a>
+    </div>
+
+    <!-- Additional Message -->
+    <div class="mt-12">
+      <p class="text-gray-500 dark:text-gray-400 italic">
+        Thanks for visiting! Feel free to explore and get in touch.
+      </p>
     </div>
   </div>
 </section>
