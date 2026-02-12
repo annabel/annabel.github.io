@@ -13,7 +13,7 @@ title: Home
     I'm Annabel and I'm a
     <span class="line-through old-job">frontend developer</span>
     <span
-      class="font-extrabold bg-gradient-to-r from-red-400 via-orange-500 to-pink-600 dark:from-emerald-700 dark:via-teal-600 dark:to-slate-400 bg-clip-text text-transparent"
+      class="font-extrabold bg-gradient-to-r from-red-500 via-orange-600 to-pink-700 dark:from-emerald-600 dark:via-teal-500 dark:to-slate-400 bg-clip-text text-transparent"
       >product designer</span
     >, currently at
     <a
@@ -55,7 +55,7 @@ title: Home
     <h2 class="text-4xl mb-4 lg:mr-20 whitespace-nowrap">About me</h2>
     <div class="flex gap-8 flex-col">
       <div class="mt-2">
-        <h3 class="text-2xl mb-2 text-pink-600 dark:text-emerald-500">
+        <h3 class="text-2xl mb-2 text-pink-700 dark:text-emerald-400">
           Experience
         </h3>
         <p class="text-lg sm:text-2xl max-w-prose">
@@ -70,7 +70,7 @@ title: Home
         </p>
       </div>
       <div class="mt-2">
-        <h3 class="text-2xl mb-2 text-pink-600 dark:text-emerald-500">
+        <h3 class="text-2xl mb-2 text-pink-700 dark:text-emerald-400">
           Outside of work
         </h3>
         <div class="text-lg sm:text-2xl max-w-prose">
