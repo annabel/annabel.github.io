@@ -56,7 +56,7 @@ All colors have been tested to ensure they meet or exceed WCAG AA requirements:
 ### Dark Mode Improvements
 1. **Background:** Changed from `neutral-800` (#262626) to `gray-800` (#1F2937) for better contrast base
 2. **Body text:** Updated from `gray-100` to `gray-50` for slightly better contrast (13.75:1 → 14.05:1)
-3. **Badge colors:** Changed from `emerald-700` to `emerald-700` to meet WCAG AA (white text: 5.48:1)
+3. **Badge colors:** Confirmed `emerald-700` provides WCAG AA compliance with white text (5.48:1 contrast ratio)
 
 ## Usage Guidelines
 
