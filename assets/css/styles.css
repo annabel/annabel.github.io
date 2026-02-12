@@ -31,14 +31,14 @@ body.loaded {
   position: absolute;
   left: -6px;
   top: -6px;
-  color: #1aff00;
+  color: #15803D;
   font-weight: bold;
   font-family: "Indie Flower", "Comic Sans MS", "Comic Sans", cursive,
     sans-serif;
   font-size: 1.4em;
   pointer-events: none;
   transform: translateX(0.15em) rotate(-8deg) scale(1.1);
-  text-shadow: 2px 2px 0 #00350d, 2px 2px 2px #0002;
+  text-shadow: 2px 2px 0 #052e16, 2px 2px 2px #0002;
   white-space: nowrap;
   clip-path: inset(0 100% 0 0);
   padding-right: 5px;
